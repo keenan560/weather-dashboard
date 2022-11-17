@@ -6,6 +6,7 @@
 
 .main-container {
   display: flex;
+  justify-content: flex-start;
 }
 
 #search-button {
@@ -16,4 +17,9 @@
 .divider {
   width: 100%;
   height: 3px;
+}
+
+.jumbotron {
+  margin-left: 20px !important;
+  width: 100%;
 }
