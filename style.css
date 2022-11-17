@@ -1,0 +1,19 @@
+.banner {
+  height: max-content;
+  padding: 10px;
+  background-image: linear-gradient(to right, #000, #7997af);
+}
+
+.main-container {
+  display: flex;
+}
+
+#search-button {
+  background-color: #7997af;
+  width: 100%;
+}
+
+.divider {
+  width: 100%;
+  height: 3px;
+}
