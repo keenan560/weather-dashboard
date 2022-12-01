@@ -29,7 +29,7 @@ const dateFormatter = (string) => {
 
 
 const getCoords = async (cityName) => {
-    let response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`)
+    let response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`)
         .then((response) => response.json())
         .then((data) => {
             coords = data[0];
@@ -51,7 +51,7 @@ const getCurrentWeather = async (lat, long) => {
 }
 
 const getForecast = async (lat, long) => {
-    let response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=imperial&appid=${API_KEY}`)
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=imperial&appid=${API_KEY}`)
         .then(response => response.json())
         .then(data => {
             return data;
